@@ -18,6 +18,7 @@ const FilmPage = () => {
         return;
       }
       await rateMovie({ jwt, data }).unwrap();
+      localStorage.setItem(`rateMoive_${data.movieId}`, data.user_rate.toString());
     } catch (err) {
       console.error('Failed to login:', err);
     }
