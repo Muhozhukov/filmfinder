@@ -2,18 +2,18 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from './Select.module.css';
 import arrowIcon from '../../assets/arrowIcon.svg';
 
-interface FilterOption {
+type FilterOption = {
   label: string;
   value: string;
-}
+};
 
-interface CustomSelectProps {
+type CustomSelectProps = {
   label: string;
   placeholder: string;
   options: FilterOption[];
   onChange: (selectedValues: FilterOption) => void;
   activeValue?: FilterOption | undefined;
-}
+};
 
 const Select: React.FC<CustomSelectProps> = ({ label, placeholder, options, onChange, activeValue }) => {
   const [isOpen, setIsOpen] = useState(false);

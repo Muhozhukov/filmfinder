@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import filledStar from '../../assets/star_filled.svg';
 import emptyStar from '../../assets/star_empty.svg';
 import grayStar from '../../assets/star_hover.svg';
 import style from './StarRating.module.css';
+import { RootState } from '../../store/store';
 
 interface StarRatingProps {
   rating: number;
@@ -11,6 +13,7 @@ interface StarRatingProps {
 
 const StarRating: React.FC<StarRatingProps> = ({ rating, onRatingChange }) => {
   const [hoverRating, setHoverRating] = useState<number | null>(null);
+  const { isLogin } = useSelector((state: RootState) => state.user);
 
   const handleMouseEnter = (index: number) => {
     setHoverRating(index);
@@ -35,15 +38,19 @@ const StarRating: React.FC<StarRatingProps> = ({ rating, onRatingChange }) => {
 
       return (
         <div key={index} className={style.starRating}>
-          <img
-            className={style.star}
-            src={starIcon}
-            alt="рейтинг"
-            key={index}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => handleClick(index)}
-          />
+          {isLogin ? (
+            <img
+              className={style.star}
+              src={starIcon}
+              alt="рейтинг"
+              key={index}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(index)}
+            />
+          ) : (
+            <img className={style.star} src={starIcon} alt="рейтинг" key={index} />
+          )}
           <p className={style.ratingNumber}>{index}</p>
         </div>
       );
