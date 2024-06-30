@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.artists {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 24px;
+    overflow: scroll;
+    /* position: relative; */
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.artists::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+    border: none;
+    background-color: inherit;
+    position: absolute;
+}
+.button_right {
+    right: 0;
+}
+
+.btnImg {
+    transition: .3s;
+    cursor: pointer;
+}
+.btnImg_left {
+    transform: rotate(180deg);
+}
+.btnImg:hover {
+    opacity: .5;
+}

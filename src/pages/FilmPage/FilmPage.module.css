@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEDED;
+    padding: 20px 30px;
+    min-height: calc(100vh - 88px);
+    height: 100%;
+}
+
+.loaderWrapper {
+    display: flex;
+    height: calc(100vh - 88px - 40px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

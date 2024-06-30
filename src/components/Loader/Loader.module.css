@@ -1,0 +1,14 @@
+.img {
+    width: 48px;
+    height: 48px;
+    animation: rotate-counterclockwise 1s linear infinite;
+}
+
+@keyframes rotate-counterclockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

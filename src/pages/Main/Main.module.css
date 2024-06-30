@@ -1,0 +1,70 @@
+.main {
+    display: flex;
+    padding: 30px 20px 0px 20px;
+    background-color: #EDEDED;
+    gap: 24px;
+    min-height: calc(100vh - 88px);
+}
+
+.filter {
+    width: 410px;
+    height: 230px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.filter__name {
+    align-self: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.loaderWrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.filmSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.notFoundWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notFountTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.notFoundText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999fa6;
+    margin-top: 6px;
+}

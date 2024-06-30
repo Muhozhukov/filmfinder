@@ -1,0 +1,28 @@
+.paginationWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.arrowButton {
+    border: none;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.arrowImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.arrowImg_left {
+    transform: rotate(180deg);
+}
+
+.arrowImg_disabled {
+    opacity: .5;
+}

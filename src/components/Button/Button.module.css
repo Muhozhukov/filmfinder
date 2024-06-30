@@ -1,0 +1,26 @@
+.button {
+    padding: 10px 16px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    opacity: .5;
+}
+
+.button_primary {
+    color: #fff;
+    background-color: #ff5500;
+}
+
+.button_secondary {
+    color: #ff5500;
+    border: solid 1px #e94e00;
+}

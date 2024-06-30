@@ -1,0 +1,60 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 340px;
+    background-color: #fff;
+    border-radius: 8px;
+    gap: 24px;
+}
+
+.headWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.closeBtn {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.closeBtn:hover {
+    opacity: .5;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.buttonContainer {
+    display: flex;
+    gap: 8px;
+}

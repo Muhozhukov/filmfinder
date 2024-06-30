@@ -1,0 +1,22 @@
+.wrapper {
+    position: relative;
+}
+
+.input {
+    width: 400px;
+    height: 40px;
+    padding: 12px;
+    padding-left: 36px;
+    position: relative;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}

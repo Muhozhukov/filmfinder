@@ -1,0 +1,15 @@
+.artistCard {
+    display: flex;
+    flex-direction: column;
+}
+.photo {
+    width: 160px;
+    height: 230px;
+    object-fit: cover;
+}
+.name {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 16px;
+}
